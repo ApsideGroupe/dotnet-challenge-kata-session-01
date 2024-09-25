@@ -14,7 +14,7 @@ jobs:
         with:
           dotnet-version: 8.x
       - name: Run test(s)
-        run: dotnet test ./katas.session.01/katas.session.01.test
+        run: dotnet test ./Katas.Session.01/Katas.Session.01.Test
       - name: Publish test result
         uses: dorny/test-reporter@v1
         if: success() || failure()    # run this step even if previous step failed
