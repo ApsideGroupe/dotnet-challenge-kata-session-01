@@ -4,7 +4,7 @@ This code repository is intended for the dotnet kata challenge organized by Apsi
 
 ## :warning: How to participate
 
-It's very simple - just clone the project and create a branch in your name, using the following format: participant/surname. Then you need to make the Katas and push your solution onto the repository. 
+It's very simple - just fork the project and create a branch in your name, using the following format: participant/surname. Then you need to make the Katas and push your solution onto the repository. 
 
 :warning::warning::warning: Only branches with an open pull request will be considered for this challenge. :warning::warning::warning:
 
