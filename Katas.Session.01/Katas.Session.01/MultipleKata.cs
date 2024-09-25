@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Katas.Session._01
 {
@@ -18,7 +15,13 @@ namespace Katas.Session._01
         /// <exception cref="NotImplementedException"></exception>
         public static int SumMultiplesBelow(int input)
         {
-            throw new NotImplementedException();
+            if (input <= 0) return 0;
+
+            return Enumerable
+                .Repeat(0, input - 1)
+                .Select((value, index) => index + 1)
+                .Where(x => x % 3 == 0 || x % 5 == 0)
+                .Sum();
         }
     }
 }
