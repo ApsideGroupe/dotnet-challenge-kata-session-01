@@ -17,7 +17,10 @@ namespace Katas.Session._01
         /// <exception cref="NotImplementedException"></exception>
         public static int CountVowels(string input)
         {
-            throw new NotImplementedException();
+            List<char> charList = ['a', 'e', 'i', 'o', 'u'];
+            int result = input.AsEnumerable().Count(x => charList.Contains(x));
+
+            return result;
         }
     }
 }

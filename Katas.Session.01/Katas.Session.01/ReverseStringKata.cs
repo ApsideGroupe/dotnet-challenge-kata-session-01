@@ -16,7 +16,9 @@ namespace Katas.Session._01
         /// <exception cref="NotImplementedException"></exception>
         public static string ReverseWords(string input)
         {
-            throw new NotImplementedException();
+            string result = String.Join(' ', input.Split(' ').Reverse());
+
+            return result;
         }
     }
 }

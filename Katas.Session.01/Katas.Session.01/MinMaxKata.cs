@@ -18,7 +18,13 @@ namespace Katas.Session._01
         /// <exception cref="NotImplementedException"></exception>
         public static string ComputeMinMax(string input)
         {
-            throw new NotImplementedException();
+            var result = input.Split(' ')
+                         .Select(s => new { parsed = int.TryParse(s, out var value), value })
+                         .Where(x => x.parsed)
+                         .Select(x => x.value)
+                         .OrderBy(x => x);
+
+            return $"{result.Max()} {result.Min()}";
         }
     }
 }

@@ -16,7 +16,9 @@ namespace Katas.Session._01
         /// <exception cref="NotImplementedException"></exception>
         public static string EvenOrOdd(int input)
         {
-            throw new NotImplementedException();
+            string result = (input % 2 == 0) ? "Even" : "Odd";
+
+            return result;
         }
     }
 }
