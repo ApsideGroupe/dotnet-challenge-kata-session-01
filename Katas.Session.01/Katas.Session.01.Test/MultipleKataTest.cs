@@ -17,7 +17,7 @@ namespace Katas.Session._01.Test
         [TestCase(2,0)]
         [TestCase(-15,0)]
         [TestCase(8,14)]
-        [TestCase(13,35)]
+        [TestCase(13,45)]
         public void SumMultiplesBelow(int input, int expected)
         {
             Assert.AreEqual(expected, MultipleKata.SumMultiplesBelow(input), $"Value: {input}");
