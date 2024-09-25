@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Katas.Session._01
 {
@@ -18,7 +15,8 @@ namespace Katas.Session._01
         /// <exception cref="NotImplementedException"></exception>
         public static string ComputeMinMax(string input)
         {
-            throw new NotImplementedException();
+            int[] nums = input.Split().Select(int.Parse).ToArray();
+            return $"{nums.Max()} {nums.Min()}";
         }
     }
 }
