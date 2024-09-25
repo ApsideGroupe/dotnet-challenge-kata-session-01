@@ -18,7 +18,11 @@ namespace Katas.Session._01
         /// <exception cref="NotImplementedException"></exception>
         public static int SumMultiplesBelow(int input)
         {
-            throw new NotImplementedException();
+            int result = Enumerable.Range(0, Math.Max(input, 0))
+                .Where(x => (x % 3 == 0) || (x % 5 == 0))
+                .Sum();
+
+            return result;
         }
     }
 }
