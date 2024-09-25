@@ -13,7 +13,7 @@ namespace Katas.Session._01.Test
         [TestCase(20, 78)]
         [TestCase(200, 9168)]
         [TestCase(0, 0)]
-        [TestCase(15,50)]
+        [TestCase(15,45)]
         [TestCase(2,0)]
         [TestCase(-15,0)]
         [TestCase(8,14)]
