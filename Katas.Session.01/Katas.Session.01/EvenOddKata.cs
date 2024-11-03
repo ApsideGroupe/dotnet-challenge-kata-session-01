@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Katas.Session._01;
+﻿namespace Katas.Session._01;
 
 public static class EvenOddKata
 {
@@ -9,9 +7,8 @@ public static class EvenOddKata
     /// </summary>
     /// <param name="input"></param>
     /// <returns></returns>
-    /// <exception cref="NotImplementedException"></exception>
     public static string EvenOrOdd(int input)
     {
-        throw new NotImplementedException();
+        return input % 2 == 0 ? "Even" : "Odd";
     }
 }

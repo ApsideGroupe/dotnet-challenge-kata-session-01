@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Katas.Session._01;
 
@@ -11,9 +12,10 @@ public static class MinMaxKata
     /// </summary>
     /// <param name="input"></param>
     /// <returns></returns>
-    /// <exception cref="NotImplementedException"></exception>
     public static string ComputeMinMax(string input)
     {
-        throw new NotImplementedException();
+        int[] strings = input.Split(' ').Select(i => Convert.ToInt32(i)).ToArray();
+
+        return $"{strings.Max()} {strings.Min()}";
     }
 }

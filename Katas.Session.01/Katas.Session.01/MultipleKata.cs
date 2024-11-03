@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Katas.Session._01;
+﻿namespace Katas.Session._01;
 
 public static class MultipleKata
 {
@@ -11,9 +9,17 @@ public static class MultipleKata
     /// </summary>
     /// <param name="input"></param>
     /// <returns></returns>
-    /// <exception cref="NotImplementedException"></exception>
     public static int SumMultiplesBelow(int input)
     {
-        throw new NotImplementedException();
+        int sum = 0;
+        for (int i = 1; i < input; i++)
+        {
+            if (i % 3 != 0 && i % 5 != 0)
+                continue;
+
+            sum += i;
+        }
+
+        return sum;
     }
 }
