@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Katas.Session._01;
 
@@ -14,6 +16,16 @@ public static class MinMaxKata
     /// <exception cref="NotImplementedException"></exception>
     public static string ComputeMinMax(string input)
     {
-        throw new NotImplementedException();
+        string[] numbersString = input.Split(' ');
+
+        List<int> numbers = numbersString
+                                .Where(numberString => int.TryParse(numberString, out _))
+                                .Select(int.Parse)
+                                .ToList();
+
+        int min = numbers.Min();
+        int max = numbers.Max();
+
+        return $"{max} {min}";
     }
 }

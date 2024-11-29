@@ -13,7 +13,21 @@ public static class VowelsKata
     /// <exception cref="NotImplementedException"></exception>
     public static int CountVowels(string input)
     {
-        throw new NotImplementedException();
+        string lowerCaseInput = input.ToLower();
+
+        int count = 0;
+
+        string vowels = "aeiou";
+
+        foreach (char c in lowerCaseInput) 
+        {
+            if (vowels.Contains(c)) 
+            {
+                count++;
+            }
+        }
+
+        return count;
     }
 }
 
