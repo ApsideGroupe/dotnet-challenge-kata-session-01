@@ -12,6 +12,9 @@ public static class EvenOddKata
     /// <exception cref="NotImplementedException"></exception>
     public static string EvenOrOdd(int input)
     {
-        throw new NotImplementedException();
+        if (input % 2 == 0)
+            return "Even";
+        else
+            return "Odd";
     }
 }
