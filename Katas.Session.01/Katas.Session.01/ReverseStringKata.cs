@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Katas.Session._01;
 
@@ -12,6 +14,6 @@ public static class ReverseStringKata
     /// <exception cref="NotImplementedException"></exception>
     public static string ReverseWords(string input)
     {
-        throw new NotImplementedException();
+        return String.Join(" ", input.Split(' ').Reverse());
     }
 }

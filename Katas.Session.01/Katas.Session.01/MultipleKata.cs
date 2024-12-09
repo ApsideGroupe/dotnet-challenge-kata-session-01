@@ -14,6 +14,14 @@ public static class MultipleKata
     /// <exception cref="NotImplementedException"></exception>
     public static int SumMultiplesBelow(int input)
     {
-        throw new NotImplementedException();
+        int output = 0;
+
+        for (int i = 3; i < input; i++)
+        {
+            if (i % 3 == 0 || i % 5 == 0)
+                output += i;
+        }
+
+        return output > 0 ? output : 0;
     }
 }

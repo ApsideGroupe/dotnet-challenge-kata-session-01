@@ -12,6 +12,7 @@ public static class EvenOddKata
     /// <exception cref="NotImplementedException"></exception>
     public static string EvenOrOdd(int input)
     {
-        throw new NotImplementedException();
+        // On regarde si la valeur l'entrée est divisible par 2.
+        return input % 2 == 0 ? "Even" : "Odd";
     }
 }
