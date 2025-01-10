@@ -10,8 +10,7 @@ public static class EvenOddKata
     /// <param name="input"></param>
     /// <returns></returns>
     /// <exception cref="NotImplementedException"></exception>
-    public static string EvenOrOdd(int input)
-    {
-        throw new NotImplementedException();
+    public static string EvenOrOdd(int input) {
+        return input % 2 == 0 ? "Even" : "Odd";
     }
 }
